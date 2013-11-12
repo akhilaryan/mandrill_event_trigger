@@ -9,10 +9,15 @@ MandrillEventTrigger::Application.routes.draw do
     # get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+    # get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-    resources :trigger
+  post 'trigger/success_email' => 'trigger#success_email'
+  post 'trigger/store_complete_email' => 'trigger#store_complete_email'
+  post 'trigger/first_customer_email' => 'trigger#first_customer_email'
+  post 'trigger/new_updates_email' => 'trigger#new_updates_email'
+
+  # resources :trigger
 
   # Example resource route with options:
   #   resources :products do
