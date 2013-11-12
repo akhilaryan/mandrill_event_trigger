@@ -1,0 +1,1 @@
+A simple App to send emails on trigger of certain events
