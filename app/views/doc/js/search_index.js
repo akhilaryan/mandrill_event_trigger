@@ -1,0 +1,1 @@
+var search_data = {"index":{"searchIndex":["created.rid"],"longSearchIndex":[""],"info":[["created.rid","","doc/created_rid.html","",""]]}}
